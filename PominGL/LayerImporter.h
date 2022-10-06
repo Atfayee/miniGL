@@ -1,0 +1,12 @@
+#ifndef _LAYERIMPORTER_H
+#define _LAYERIMPORTER_H
+
+struct Layer;
+//图层导入类
+class LayerImporter
+{
+public:
+	static Layer* importShpLayer(const char* path, const char* labelFieldName = "");//导入shp文件，返回图层对象，导入失败则返回NULL
+};
+
+#endif
